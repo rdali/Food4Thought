@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Food4Thought</title>
+    <link>Food4Thought/post/</link>
+    <description>Recent content in Posts on Food4Thought</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="Food4Thought/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Welcome to Rola Dali&#39;s Blog</title>
+      <link>Food4Thought/2018/hello-world/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>Food4Thought/2018/hello-world/</guid>
+      <description>  “Yeah It&amp;rsquo;s on. ”
+ Hello World! </description>
+    </item>
+    
+  </channel>
+</rss>
