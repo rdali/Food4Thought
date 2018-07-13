@@ -1,4 +1,4 @@
-baseurl = "Food4Thought/"
+baseurl = ""
 title = "Food4Thought"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
