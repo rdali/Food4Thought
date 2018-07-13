@@ -3,38 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/07/13/hello-world/</loc>
+    <loc>/Food4Thought/2018/07/13/hello-world/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/search/placeholder/</loc>
+    <loc>/Food4Thought/search/placeholder/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/Food4Thought/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
+    <loc>/Food4Thought/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/search/</loc>
+    <loc>/Food4Thought/post/</loc>
+    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/Food4Thought/search/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/</loc>
     <priority>0</priority>
   </url>
   

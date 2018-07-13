@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Food4Thought</title>
-    <link>/tags/</link>
+    <link>/Food4Thought/tags/</link>
     <description>Recent content in Tags on Food4Thought</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/Food4Thought/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
