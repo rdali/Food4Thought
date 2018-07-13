@@ -1,0 +1,10 @@
+*~
+public
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex.gz
+auto
+.DS_Store
+.Rhistory
