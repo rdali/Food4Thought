@@ -17,12 +17,42 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/c3g/</loc>
+    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/compute-canada/</loc>
+    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/</loc>
+    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/genpipes/</loc>
+    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/categories/genomic-analysis/</loc>
+    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/genomics/</loc>
     <lastmod>2018-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -34,12 +64,19 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/rnaseq/</loc>
+    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/search/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/Food4Thought/tags/</loc>
+    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

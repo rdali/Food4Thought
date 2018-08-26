@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compute Canada on Food4Thought</title>
+    <link>/Food4Thought/tags/compute-canada/</link>
+    <description>Recent content in Compute Canada on Food4Thought</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/Food4Thought/tags/compute-canada/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up GenPipes on Compute Canada Servers</title>
+      <link>/Food4Thought/2018/genpipes_setup/</link>
+      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2018/genpipes_setup/</guid>
+      <description>Overview: In this practical, we will set up GenPipes, to be able to access its installed modules, pipelines and genomes.
+
+Setting up GenPipes: To set up GenPipes, you will need to add some lines of code in your bash_profile file on the server you will be using. The bash_profile is a hidden file in your home directory that sets up your environment every time you log in. Alternatively, you can also use your bashrc file.</description>
+    </item>
+    
+  </channel>
+</rss>

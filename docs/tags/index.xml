@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Food4Thought</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 26 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Food4Thought/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C3G</title>
+      <link>/Food4Thought/tags/c3g/</link>
+      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/c3g/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compute Canada</title>
+      <link>/Food4Thought/tags/compute-canada/</link>
+      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/compute-canada/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GenPipes</title>
+      <link>/Food4Thought/tags/genpipes/</link>
+      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/genpipes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genomics</title>
+      <link>/Food4Thought/tags/genomics/</link>
+      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/genomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RNASeq</title>
+      <link>/Food4Thought/tags/rnaseq/</link>
+      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/rnaseq/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
