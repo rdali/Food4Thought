@@ -13,9 +13,9 @@
     <meta name="keyword"  content="Rola Dali, Tutorials, genomics, computer Science, Data Science, Bioinformatics, R, python">
     <link rel="shortcut icon" href="/Food4Thought/img/favicon.ico">
 
-    <title>Welcome to Rola Dali&#39;s Blog-Rola Dali&#39;s Blog</title>
+    <title>Setting up GenPipes on Compute Canada Servers-Rola Dali&#39;s Blog</title>
 
-    <link rel="canonical" href="/2018/hello-world/index.html">
+    <link rel="canonical" href="/2018/genpipes_setup/index.html">
 
     <link rel="stylesheet" href="/Food4Thought/css/iDisqus.min.css"/>
 	
@@ -118,9 +118,9 @@
                     <div class="tags">
                        
                     </div>
-                    <h1>Welcome to Rola Dali&#39;s Blog</h1>
-                    <h2 class="subheading">Hello World, Hello Blog</h2>
-                    <span  class="meta">Posted by Rola Dali on Friday, July 13, 2018
+                    <h1>Setting up GenPipes on Compute Canada Servers</h1>
+                    <h2 class="subheading">Accessing C3G/GenPipes resources</h2>
+                    <span  class="meta">Posted by Rola Dali on Sunday, August 26, 2018
                         
                     </span>
                 </div>
@@ -148,33 +148,275 @@
                 </header>
                 <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li><a href="#hello-world">Hello World!</a></li>
-</ul></li>
+<li><a href="#overview">Overview:</a></li>
+<li><a href="#setting-up-genpipes">Setting up GenPipes:</a></li>
+<li><a href="#genpipes-modules">GenPipes Modules:</a></li>
+<li><a href="#genpipes-pipelines">GenPipes Pipelines:</a></li>
+<li><a href="#genpipes-genomes">GenPipes Genomes:</a></li>
+<li><a href="#extra">Extra:</a></li>
 </ul>
 </nav>
 		
 		
 
+<h1 id="overview">Overview:</h1>
+
+<p>In this practical, we will set up <strong><em>GenPipes</em></strong>, to be able to access its installed <strong>modules</strong>, <strong>pipelines</strong> and <strong>genomes</strong>.</p>
+
+<p><br/></p>
+
+<h1 id="setting-up-genpipes">Setting up GenPipes:</h1>
+
+<p>To set up <em>GenPipes</em>, you will need to add some lines of code in your <strong>bash_profile</strong> file on the server you will be using. The bash_profile is a hidden file in your home directory that sets up your environment every time you log in. Alternatively, you can also use your <strong>bashrc</strong> file.</p>
+
+<p><br/></p>
+
 <blockquote>
-<p>“Yeah It&rsquo;s alive!. ”</p>
+<p>A Note on hidden files:</p>
 </blockquote>
 
-<h2 id="hello-world">Hello World!</h2>
+<p><details>
+  <summary>
+<strong>Hidden Files</strong> (click here)
+  </summary></p>
+
+<p>Hidden files start with a <code>.</code> at the beginning of their names. For example: <code>.bash_profile</code> or <code>.bashrc</code>. To be able to see hidden files, you need to use:</p>
+
+<p><code>ls -a</code></p>
+
+<p></details></p>
+
+<p><br/></p>
+
+<p>Let&rsquo;s start:</p>
+
+<p><br/></p>
+
+<p><strong>1- Connect to the server:</strong></p>
+
+<p>Open a terminal window and log into the server:</p>
+
+<pre><code class="language-bash">#&lt;my_cc_account&gt; is your CC user name
+ssh &lt;my_cc_account&gt;@mp2.ccs.usherbrooke.ca
+</code></pre>
+
+<p><br/></p>
+
+<p><strong>2- Add Code to your bash_profile:</strong></p>
+
+<pre><code class="language-bash">## open bash_profile:
+nano $HOME/.bash_profile
+</code></pre>
+
+<p>Copy/Paste the following text into your .bash_profile <em>after</em> modifying the last 2 lines with your information:</p>
+
+<pre><code class="language-bash">## GenPipes/MUGQIC genomes and modules
+export MUGQIC_INSTALL_HOME=/cvmfs/soft.mugqic/CentOS6
+module use $MUGQIC_INSTALL_HOME/modulefiles
+module load mugqic/python/2.7.13
+module load mugqic/genpipes
+
+## Modify text below within &lt;&gt; to add you own email and CC_account ID:
+export JOB_MAIL=&lt;my.name@my.email.ca&gt;
+export RAP_ID=&lt;cc_account&gt; 
+
+</code></pre>
+
+<p><br/>
+<strong>Note:</strong> The RAP_ID is usually in the form of <code>def-&lt;account&gt;</code> or <code>rrg-&lt;account&gt;</code>.
+<br/></p>
+
+<p>Exit nano (control/Ctrl + X).</p>
+
+<p><br/></p>
+
+<p><strong>3- Source your bash_profile:</strong></p>
+
+<p>After making changes to your bash_profile file, you will either need to source it, using:</p>
+
+<p><code>source $HOME/.bash_profile</code></p>
+
+<p><strong>OR</strong> you need to log out and then log in again.</p>
+
+<p><strong>Now you are ready to use GenPipes!</strong></p>
+
+<p>To test whether everything worked, type in the following command:</p>
+
+<p><code>rnaseq.py</code></p>
+
+<p>You have succeeded, if you get something that looks like this:</p>
+
+<p><strong>usage: rnaseq.py [-h] [&ndash;help] [-c CONFIG [CONFIG &hellip;]] &hellip;</strong></p>
+
+<p>If you get <strong>bash: rnaseq.py: command not found</strong>, then something is not right. Let us know.</p>
+
+<p><br/></p>
+
+<h1 id="genpipes-modules">GenPipes Modules:</h1>
+
+<p>GenPipes gives you access to hundreds of bioinformatics <a href="http://www.computationalgenomics.ca/cvmfs-modules/">tools/modules</a> pre-installed by our team. To explore the available tools, you can type:</p>
+
+<p><code>module avail mugqic/</code></p>
+
+<p>This will allow you to use bioinformatics tools like Samtools, Homer, MACS2, without installing them yourself.</p>
+
+<p>You can load them as follows:</p>
+
+<pre><code class="language-bash"># module add mugqic/&lt;tool&gt;/&lt;version&gt;
+module add mugqic/samtools/1.4.1
+# Now samtools 1.4.1 is available to use. To check:
+samtools
+</code></pre>
+
+<p><br/></p>
+
+<blockquote>
+<p>What are Modules and Why do we need them?</p>
+</blockquote>
+
+<p><details>
+  <summary>
+<strong>More about Modules</strong> (click here)
+  </summary></p>
+
+<p>&ldquo;Modules&rdquo; are a way to load software or tools when we need them.</p>
+
+<p>Every time a computer runs a command (example &ldquo;ls&rdquo;), it needs to find the instructions to do so. It looks for the instructions in places listed in a variable called the <strong>&rdquo;$PATH&rdquo;</strong>. Every time you install a new tool, you need to add its location to your $PATH. Every time you issue a command (like ls), the computer will search through all the places listed in the $PATH to find the instructions on what to do.</p>
+
+<p>Imagine, for servers that have thousands of users, each in need of several software, how long the PATH can get and how much that can slow down the system!</p>
+
+<p>To avoid this, installed software is packaged in &ldquo;modules&rdquo; that you can be loaded when needed. The software is installed on the computer but the computer is not aware of it until you &ldquo;load&rdquo;&rdquo; the module, which adds the software location to the $PATH.</p>
+
+<p>To see what is in your $PATH, use:</p>
+
+<p><code>echo $PATH</code></p>
+
+<p>To see where the instructions of a command are stored, you can use <code>which</code>.
+<code>which ls</code></p>
+
+<p>For ls, the instruction are usually stored in: /bin/ls</p>
+
+<p></details></p>
+
+<p><br/></p>
+
+<blockquote>
+<p>What are the Modules that are available with GenPipes?</p>
+</blockquote>
+
+<p><details>
+  <summary>
+<strong>GenPipes Modules:</strong> (click here)
+  </summary></p>
+
+<p>Command:</p>
+
+<p><code>module avail mugqic/</code></p>
+
+<p><strong>OR</strong> check out this <a href="http://www.computationalgenomics.ca/cvmfs-modules/">page</a>.</p>
+
+<p></details></p>
+
+<p><br/></p>
+
+<h1 id="genpipes-pipelines">GenPipes Pipelines:</h1>
+
+<p>GenPipes comes with <a href="https://bitbucket.org/mugqic/genpipes/src/ec3183ff39ed8371446fc243d41971efd0d092ac/pipelines/?at=master">12 Pipelines</a> for various genomics analyses, named <code>&lt;pipeline&gt;.py</code>.</p>
+
+<p>To use the pipeline, you just need to type its name:</p>
+
+<pre><code class="language-bash">
+## for rnaseq, the pipeline is rnaseq.py. Try typing:
+
+rnaseq.py
+</code></pre>
+
+<p>The pipelines are found in:</p>
+
+<p><code>ls -ltrh $MUGQIC_PIPELINES_HOME/pipelines/</code></p>
+
+<p><br/></p>
+
+<h1 id="genpipes-genomes">GenPipes Genomes:</h1>
+
+<p>GenPipes also gives you access to pre-installed <a href="http://www.computationalgenomics.ca/cvmfs-genomes/">genomes</a> available in <code>$MUGQIC_INSTALL_HOME/genomes/species/</code>.</p>
+
+<p>To check all the available species, type:</p>
+
+<p><code>ls $MUGQIC_INSTALL_HOME/genomes/species</code></p>
+
+<p>All genome-related files, including indices for different aligners and annotation files can be found in:</p>
+
+<pre><code class="language-bash"># $MUGQIC_INSTALL_HOME/genomes/species/&lt;species_scientific_name&gt;.&lt;assembly&gt;/
+
+## so for Homo Sapiens hg19 assembly, that would be:
+ls $MUGQIC_INSTALL_HOME/genomes/species/Homo_sapiens.hg19/
+</code></pre>
+
+<p><br/></p>
+
+<blockquote>
+<p>What are the Genomes that are available with GenPipes?</p>
+</blockquote>
+
+<p><details>
+  <summary>
+<strong>GenPipes Genomes:</strong> (click here)
+  </summary></p>
+
+<p>Command:</p>
+
+<p><code>ls $MUGQIC_INSTALL_HOME/genomes/species</code></p>
+
+<p><strong>OR</strong> check this <a href="http://www.computationalgenomics.ca/cvmfs-genomes/">page</a>.</p>
+
+<p></details></p>
+
+<p><br/></p>
+
+<h1 id="extra">Extra:</h1>
+
+<blockquote>
+<p>GenPipes Test Data:</p>
+</blockquote>
+
+<p><details>
+  <summary>
+<strong>GenPipes Test Data</strong> (click here)
+  </summary></p>
+
+<p>To test GenPipes, some small test datasets can be downloaded from this <a href="http://www.computationalgenomics.ca/test-dataset/">page</a>.</p>
+
+<p></details></p>
+
+<p><br/></p>
+
+<blockquote>
+<p>A note about CVFMS:</p>
+</blockquote>
+
+<p><details>
+  <summary>
+<strong>More about CVMFS</strong> (click here)
+  </summary></p>
+
+<p>GenPipes is currenlty installed on many servers (Abacus, Guillimin, Mammouth, Cedar, Graham&hellip;). To avoid discrepancy between compute sites, GenPipes setup has been centralized to one location which is then distributed on a real-time shared file system: the CERN Virtual Machine File System (CVMFS). This helps us make sure that all the components of GenPipes are the same across servers.</p>
+
+<p></details></p>
+
+<p><br/>
+<br/>
+<br/>
+<br/></p>
 
 
                 <hr>
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2018/genpipes_setup/index.html" data-toggle="tooltip" data-placement="top" title="Setting up GenPipes on Compute Canada Servers">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/Food4Thought/search/placeholder/" data-toggle="tooltip" data-placement="top" title="">Next Post &rarr;</a>
+                        <a href="/2018/hello-world/index.html" data-toggle="tooltip" data-placement="top" title="Welcome to Rola Dali&#39;s Blog">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
