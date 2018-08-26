@@ -1,10 +1,10 @@
-baseurl = ""
+baseurl = "/Food4Thought/"
 title = "Food4Thought"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
-googleAnalytics = ""
+disqusShortname = "food4thought-3"
+googleAnalytics = "UA-122338769-1"
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
@@ -19,7 +19,7 @@ home = ["HTML", "RSS", "Algolia"]
   SEOTitle = "Rola Dali's Blog"
   description = "Journals of a meandering mind: topics/tutorials in Computer Science, Data Science, Bioinformatics, The Sciences, and Society..."
   keyword = "Rola Dali, Tutorials, genomics, computer Science, Data Science, Bioinformatics, R, python"
-  slogan = "Work Smarter; Not Harder..."
+  slogan = "'Excellence is a habit; not a gift...'"
 
   image_404 = "img/404-bg.jpg"
   title_404 = "Ooops! This page is not here :("
