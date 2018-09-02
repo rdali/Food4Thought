@@ -13,7 +13,7 @@ tags:
     - GenPipes
     - Compute Canada
 categories: [ Genomic Analysis ]
-image:      "none"
+image:      ""
 ---
 
 
