@@ -23,6 +23,7 @@ image:      ""
 In this practical, we will set up **_GenPipes_**, to be able to access its installed **modules**, **pipelines** and **genomes**.
 
 
+<br/>
 
 # Setting up GenPipes:
 
@@ -111,7 +112,7 @@ You have succeeded, if you get something that looks like this:
 
 If you get **bash: rnaseq.py: command not found**, then something is not right. Let us know.
 
-
+<br/>
 
 # GenPipes Modules:
 
@@ -178,7 +179,7 @@ Command:
 
 </details>
 
- 
+ <br/>
 
 # GenPipes Pipelines:
 
@@ -197,7 +198,7 @@ The pipelines are found in:
 
 `ls -ltrh $MUGQIC_PIPELINES_HOME/pipelines/`
 
-
+<br/>
 
 # GenPipes Genomes:
 
@@ -235,7 +236,7 @@ Command:
 
 </details>
 
-
+<br/>
 
 # Extra:
 
