@@ -22,13 +22,12 @@ image:      ""
 
 In this practical, we will set up **_GenPipes_**, to be able to access its installed **modules**, **pipelines** and **genomes**.
 
-<br/>
+
 
 # Setting up GenPipes:
 
 To set up _GenPipes_, you will need to add some lines of code in your **bash_profile** file on the server you will be using. The bash_profile is a hidden file in your home directory that sets up your environment every time you log in. Alternatively, you can also use your **bashrc** file.  
 
-<br/>
 
 > A Note on hidden files:
 
@@ -43,11 +42,9 @@ Hidden files start with a `.` at the beginning of their names. For example: `.ba
 
 </details>
 
-<br/>
 
 Let's start:
 
-<br/>
 
 **1- Connect to the server:**
 
@@ -59,7 +56,7 @@ Open a terminal window and log into the server:
 ssh <my_cc_account>@mp2.ccs.usherbrooke.ca
 ```  
 
-<br/>
+
 
 **2- Add Code to your bash_profile:**
 
@@ -83,13 +80,13 @@ export JOB_MAIL=<my.name@my.email.ca>
 export RAP_ID=<cc_account> 
 
 ```
-<br/>
+
 **Note:** The RAP_ID is usually in the form of `def-<account>` or `rrg-<account>`.
-<br/>
+
 
 Exit nano (control/Ctrl + X).
 
-<br/>
+
 
 **3- Source your bash_profile:**
 
@@ -114,7 +111,7 @@ You have succeeded, if you get something that looks like this:
 
 If you get **bash: rnaseq.py: command not found**, then something is not right. Let us know.
 
-<br/>
+
 
 # GenPipes Modules:
 
@@ -134,7 +131,7 @@ module add mugqic/samtools/1.4.1
 samtools
 ```
 
-<br/>
+
   
 > What are Modules and Why do we need them?
 
@@ -164,7 +161,7 @@ For ls, the instruction are usually stored in: /bin/ls
 </details>
 
 
-<br/>
+
 
 > What are the Modules that are available with GenPipes?
 
@@ -181,7 +178,7 @@ Command:
 
 </details>
 
-<br/> 
+ 
 
 # GenPipes Pipelines:
 
@@ -200,7 +197,7 @@ The pipelines are found in:
 
 `ls -ltrh $MUGQIC_PIPELINES_HOME/pipelines/`
 
-<br/>
+
 
 # GenPipes Genomes:
 
@@ -220,7 +217,7 @@ All genome-related files, including indices for different aligners and annotatio
 ls $MUGQIC_INSTALL_HOME/genomes/species/Homo_sapiens.hg19/
 ```
 
-<br/>
+
 
 > What are the Genomes that are available with GenPipes?
 
@@ -238,7 +235,7 @@ Command:
 
 </details>
 
-<br/>
+
 
 # Extra:
 
@@ -253,7 +250,7 @@ To test GenPipes, some small test datasets can be downloaded from this [page](ht
 
 </details>
 
-<br/>
+
 
 > A note about CVFMS:
 
