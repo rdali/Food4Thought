@@ -7,5 +7,7 @@ public
 *.synctex.gz
 auto
 .DS_Store
+*.DS_Store
+.gitignore
 .Rhistory
 #docs
