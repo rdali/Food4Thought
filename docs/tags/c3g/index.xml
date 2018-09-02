@@ -17,9 +17,9 @@
       <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/Food4Thought/2018/genpipes_setup/</guid>
-      <description>Overview: In this practical, we will set up GenPipes, to be able to access its installed modules, pipelines and genomes.
+      <description>Overview In this practical, we will set up GenPipes, to be able to access its installed modules, pipelines and genomes.
 
-Setting up GenPipes: To set up GenPipes, you will need to add some lines of code in your bash_profile file on the server you will be using. The bash_profile is a hidden file in your home directory that sets up your environment every time you log in. Alternatively, you can also use your bashrc file.</description>
+Setting up GenPipes To set up GenPipes, you will need to add some lines of code in your bash_profile file on the server you will be using. The bash_profile is a hidden file in your home directory that sets up your environment every time you log in. Alternatively, you can also use your bashrc file.</description>
     </item>
     
   </channel>

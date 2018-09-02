@@ -2743,3 +2743,8 @@ li.pingback:first-child {
   }
 }
 
+.page-content {
+  margin: 0 auto;
+  max-width: 974px;
+}
+

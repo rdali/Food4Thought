@@ -16,16 +16,16 @@ categories: [ Genomic Analysis ]
 image:      ""
 ---
 
+<br/>
 
-
-# Overview:
+# Overview
 
 In this practical, we will set up **_GenPipes_**, to be able to access its installed **modules**, **pipelines** and **genomes**.
 
 
 <br/>
 
-# Setting up GenPipes:
+# Setting up GenPipes
 
 To set up _GenPipes_, you will need to add some lines of code in your **bash_profile** file on the server you will be using. The bash_profile is a hidden file in your home directory that sets up your environment every time you log in. Alternatively, you can also use your **bashrc** file.  
 
@@ -114,7 +114,7 @@ If you get **bash: rnaseq.py: command not found**, then something is not right. 
 
 <br/>
 
-# GenPipes Modules:
+# GenPipes Modules
 
 GenPipes gives you access to hundreds of bioinformatics [tools/modules](http://www.computationalgenomics.ca/cvmfs-modules/) pre-installed by our team. To explore the available tools, you can type:
 
@@ -181,7 +181,7 @@ Command:
 
  <br/>
 
-# GenPipes Pipelines:
+# GenPipes Pipelines
 
 GenPipes comes with [12 Pipelines](https://bitbucket.org/mugqic/genpipes/src/ec3183ff39ed8371446fc243d41971efd0d092ac/pipelines/?at=master) for various genomics analyses, named `<pipeline>.py`.
 
@@ -200,7 +200,7 @@ The pipelines are found in:
 
 <br/>
 
-# GenPipes Genomes:
+# GenPipes Genomes
 
 GenPipes also gives you access to pre-installed [genomes](http://www.computationalgenomics.ca/cvmfs-genomes/) available in `$MUGQIC_INSTALL_HOME/genomes/species/`.
 
@@ -238,7 +238,7 @@ Command:
 
 <br/>
 
-# Extra:
+# Extra
 
 > GenPipes Test Data:
 
