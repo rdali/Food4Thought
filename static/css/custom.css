@@ -2745,6 +2745,7 @@ li.pingback:first-child {
 
 .page-content {
   margin: 0 auto;
-  max-width: 974px;
+  #max-width: 974px;
+  max-width: 85%;
 }
 
