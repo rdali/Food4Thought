@@ -18,7 +18,7 @@ image:      ""
 
 <br/>
 
-# Overview
+# Objective
 
 In this practical, we will set up **_GenPipes_**, to be able to access its installed **modules**, **pipelines** and **genomes**.
 

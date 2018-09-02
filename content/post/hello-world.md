@@ -8,7 +8,6 @@ URL: "/2018/hello-world/index.html"
 image:      ""
 ---
 
-> “Yeah It's alive!. ”
-
-
 ## Hello World!
+
+> “Yeah It's alive!. ”
