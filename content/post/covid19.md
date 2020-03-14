@@ -21,12 +21,12 @@ image:      ""
 
 
 
-As I watch people around me panic, I thought I'd scribble down the words that I have been reciting to my husband three times a day for the last week. He is an emotional person, like many, and has found it hard to keep a focused, rational thinking process about the situation despite his PhD in Systems Biology, 2 Masters and 2 undergrads. If anyone should understand viruses, biology, biochemistry and the spread of disease, it should be my husband yet in times like these, rationality is thrown out the door. So here is my two cents.
+As I watch people around me panic, I thought I'd scribble down the words that I have been reciting to my husband three times a day for the last week. He is an emotional person, like many, and has found it hard to keep a focused, rational thinking process about the situation despite his PhD in Systems Biology, 2 Masters and 2 undergrads. If anyone should understand viruses, biology, biochemistry and the spread of disease, it should be my husband yet in times like these, rationality is thrown out the window. So here is my two cents.
 
 I feel people are over-reacting... Yes, the virus has a high transmission rate and has spread across the globe in record time, but for over 80% of cases, the symptoms are mild (fever, tiredness, and dry cough according to the World Health Organization [WHO](https://www.who.int/news-room/q-a-detail/q-a-coronaviruses)) and most make a recovery without any medical intervention. Some patients exhibit aches, pains and nasal congestion. Those who are in danger are generally older people, and people with pre-existing immune or lung issues. Breaking the mortalities by age group, deaths peak after 60 years of age. If you are young and in normal health, your odds of dying from this (~0.2% of cases) are comparable to your chances of [dying in a motor vehicle or by falling](https://www.nsc.org/work-safety/tools-resources/injury-facts/chart). 
 
  
-![COVID-19 Deaths By Age Group](img/covid_deathByAge.png)
+![COVID-19 Deaths By Age Group](./imgs/covid_deathByAge.png)
 
 Source: [Here](https://qz.com/emails/coronavirus/1814038/)
 
