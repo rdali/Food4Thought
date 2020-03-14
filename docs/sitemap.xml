@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/Food4Thought/2020/covid19/</loc>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/2018/genpipes_setup/</loc>
     <lastmod>2018-08-26T00:00:00+00:00</lastmod>
   </url>
@@ -34,8 +39,32 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/corona/</loc>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/covid19/</loc>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/epidemiology/</loc>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/categories/epidemiology-analysis/</loc>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/</loc>
-    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -59,7 +88,7 @@
   
   <url>
     <loc>/Food4Thought/post/</loc>
-    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
