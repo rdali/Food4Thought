@@ -11,7 +11,7 @@ tags:
     - corona
     - epidemiology
     
-categories: [ Epidemiology Analysis ]
+categories: [ Epidemiology Analysis, Current Issues ]
 image:      ""
 ---
 
