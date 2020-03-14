@@ -62,7 +62,7 @@ There are FAQs on practically every resource. If you are worried, read through t
 
 <br/>
 
-> What are some good resources to look at?
+> **What are some good resources to look at?**
 
 <details>
   <summary>
@@ -75,9 +75,8 @@ For fellow Canadians, the federal government has set up [a page](https://www.can
 </details>
 
 <br/>
-<br/>
 
-> If it is really not severe, why are governments taking serious measures?
+> **If it is not so severe, why are governments taking serious measures?**
 
 <details>
   <summary>
@@ -90,7 +89,6 @@ The second reason governments take action is simple politics. Politicians need t
 
 </details>
 
-<br/>
 <br/>
 
 > Should we be scared?
@@ -106,10 +104,9 @@ COVID-19 is serious for some but it is far from the worse thing we've had to fac
 </details>
 
 <br/>
-<br/>
 
 
-> What's with the toilet paper rush?
+> **What's with the toilet paper rush?**
 
 <details>
   <summary>
@@ -125,14 +122,12 @@ Check this [cool experiment on Human Conformity](https://www.youtube.com/watch?v
 </details>
 
 <br/>
-<br/>
 
-> What should we do now?
+> **What should we do now?**
 
 <details>
   <summary>
 **Action plan** (click here)
-
   </summary>
 
 Again, Be prepared. Have the [recommended necessities](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/being-prepared.html) and follow [recommended guidelines](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/health-professionals/public-health-measures-mitigate-covid-19.html), if not for your own health, then for that of others. The 2 week shutdown is supposed to slow the virus propagation to allow medical systems to absorb all critical cases. Avoid unnecessary trips. Read, bake, rest, catch up on your favorite shows and wait it out. **AND BE MINDFUL OF WHAT YOU SHARE ON SOCIAL MEDIA**; don't succumb to panic, don't cause panic.
