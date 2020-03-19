@@ -38,11 +38,20 @@
     </item>
     
     <item>
-      <title>Tech Linux</title>
-      <link>/Food4Thought/categories/tech-linux/</link>
+      <title>Linux</title>
+      <link>/Food4Thought/categories/linux/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/Food4Thought/categories/tech-linux/</guid>
+      <guid>/Food4Thought/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>/Food4Thought/categories/tech/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/categories/tech/</guid>
       <description></description>
     </item>
     

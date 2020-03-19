@@ -12,7 +12,7 @@ tags:
     - Linux
     - technology
     
-categories: [ Tech Linux ]
+categories: [ Tech, Linux ]
 image:      "https://raw.githubusercontent.com/rdali/Food4Thought/master/content/imgs/2020/motherboard.jpg"
 ---
 

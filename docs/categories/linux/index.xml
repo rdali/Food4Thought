@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Food4Thought</title>
+    <link>/Food4Thought/categories/linux/</link>
+    <description>Recent content in Linux on Food4Thought</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/Food4Thought/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting Up a CentOS 7 home server</title>
+      <link>/Food4Thought/2020/server/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2020/server/</guid>
+      <description>Setting Up a CentOS 7 home server 
+I have been planning to set up a home server for a year now but have been putting it off. This week, with the COVID-19 lockdown, my husband and I pulled out the 3 ancient computers sitting in our garage to set up one decent home server. The purpose was mainly curiosity; to play with pieces of hardware and software to learn a few things and to have our own little server to test various pipelines.</description>
+    </item>
+    
+  </channel>
+</rss>
