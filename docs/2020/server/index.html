@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><head>
+    <meta name="google-site-verification" content="9vIieCe-Qpd78QOmBl63rGtIVbhY6sYyuxX3j8XWBA4" />
+    <meta name="baidu-site-verification" content="LRrmH41lz7" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="I recently set up a CentOS 7 home server from 3 very old computers. This post describes that process.">
+    
+    <meta name="keyword"  content="Rola Dali, Tutorials, genomics, computer Science, Data Science, Bioinformatics, R, python">
+    <link rel="shortcut icon" href="/Food4Thought/img/favicon.ico">
+
+    <title>Setting Up a CentOS 7 home server-Rola Dali&#39;s Blog</title>
+
+    <link rel="canonical" href="/2020/server/index.html">
+
+    <link rel="stylesheet" href="/Food4Thought/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/Food4Thought/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/Food4Thought/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/Food4Thought/css/syntax.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/Food4Thought/js/jquery.min.js"></script>
+    
+    
+    <script src="/Food4Thought/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/Food4Thought/js/hux-blog.min.js"></script>
+</head>
+</head>
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/Food4Thought//">Food4Thought</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/Food4Thought//">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/current-issues">Current Issues</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/epidemiology">Epidemiology</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/genomics">Genomics</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/tech-linux">Tech Linux</a>
+                    </li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header{
+        background-image: url('https://raw.githubusercontent.com/rdali/Food4Thought/master/content/imgs/2020/motherboard.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                       
+                       <a class="tag" href="/Food4Thought/tags/centos-7" title="CentOS 7">
+                           CentOS 7
+                        </a>
+                        
+                       <a class="tag" href="/Food4Thought/tags/home-server" title="home server">
+                           home server
+                        </a>
+                        
+                       <a class="tag" href="/Food4Thought/tags/linux" title="Linux">
+                           Linux
+                        </a>
+                        
+                       <a class="tag" href="/Food4Thought/tags/technology" title="technology">
+                           technology
+                        </a>
+                        
+                    </div>
+                    <h1>Setting Up a CentOS 7 home server</h1>
+                    <h2 class="subheading">... because it is fun...</h2>
+                    <span  class="meta">Posted by Rola Dali on Tuesday, March 17, 2020
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+		
+                <header>
+                <h2>Overview</h2>
+                </header>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#setting-up-a-centos-7-home-server">Setting Up a CentOS 7 home server</a>
+<ul>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#installing-centos-7">Installing CentOS 7</a>
+<ul>
+<li><a href="#the-actual-experience">The actual experience</a></li>
+<li><a href="#what-s-next">What&rsquo;s next?</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		
+		
+
+<h1 id="setting-up-a-centos-7-home-server">Setting Up a CentOS 7 home server</h1>
+
+<p><br/></p>
+
+<p>I have been planning to set up a home server for a year now but have been putting it off. This week, with the COVID-19 lockdown, my husband and I pulled out the 3 ancient computers sitting in our garage to set up one decent home server. The purpose was mainly curiosity; to play with pieces of hardware and software to learn a few things and to have our own little server to test various pipelines. I have also been wanting to get my Linux admin certification, so it gives me a good medium to experiment with.</p>
+
+<h2 id="hardware">Hardware</h2>
+
+<p>I had purchased a <em>Lenovo</em> tower from a colleague of mine for about 35\$ last year in order to break it down into parts. It is an M81 ThinkCenter running Windows 7. It has an Intel Core i5 processor, 4 GB of RAM and a 500 GB drive. It was produced back in 2011 which makes it about 9 years old. We also had 2 other i3 towers that we got for free from a friend.</p>
+
+<p>We opened up all 3 towers and pulled out the graphics cards, RAMs, hard drives and re-assembled the newer pieces into a single system on the lenovo board. The final product was a system with Intel Core i5, 14 GB of RAM, 1.5 TB drive and a primitive graphics card with an HDMI input which was absent in the lenovo system; not great specs by today&rsquo;s standards but good enough for 35\$ and for a system that is intended to be abused. The initial model did not have a Network card to hook up to the internet so we added a Wi-Fi usb adapter.</p>
+
+<p><img src="https://raw.githubusercontent.com/rdali/Food4Thought/master/content/imgs/2020/computers_scavange.jpg" alt="Putting Frankenstein together" /></p>
+
+<p><br/></p>
+
+<h2 id="software">Software</h2>
+
+<p>I decided to install CentOS 7 on the system. I chose CentOS because I was more interested in a server distribution and not a Linux desktop version. CentOS is the distribution chosen for most research servers. In fact, <sup>7</sup>&frasl;<sub>7</sub> servers I use regularly have some verion of CentOS. CentOS is stable and secure. It is well documented, but not as well as Ubuntu. I wanted a distribution that was not too easy to set up, as part of my learning process. Digging through forums and learning how to sift through information and find resources is a learnt skill.</p>
+
+<h2 id="installing-centos-7">Installing CentOS 7</h2>
+
+<p>There were several steps to installing a new OS which were summed up well on most references. I wanted a single boot system with CentOS 7 only. I had my mac on the side for help with references and downloads.</p>
+
+<p>###1- Download Linux iso file:</p>
+
+<p>I downloaded the <a href="http://centos.mirror.iweb.ca/7.7.1908/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso">CentOS 7 Minimal iso file</a> from the CentOS <a href="http://centos.mirror.iweb.ca/7.7.1908/isos/x86_64/">website</a>. I wanted the Minimal version, which comes with less tools, in order to customize the system and learn how to do things from scratch.</p>
+
+<p><strong>Note</strong>: It is always a good idea to validate the checksum of the downloaded file to avoid failures due to incomplete or corrupt downloads.</p>
+
+<p>###2- Create a bootable USB drive with the iso file</p>
+
+<p>Plug in the USB and check the name of the USB drive by typing in the terminal:</p>
+
+<p><code>df -h</code></p>
+
+<p>The USB port I use on my mac is: disk2</p>
+
+<p>Create bootable USB drive:</p>
+
+<p><code>#sudo dd if=&lt;isoLocation&gt; of=/dev/r&lt;nameOfDisk&gt; bs=1m</code></p>
+
+<p>For me this becomes:</p>
+
+<p><code>sudo dd if=~/Downloads/CentOS-7-x86_64-Minimal-1908.iso of=/dev/rdisk2 bs=1m</code></p>
+
+<p>###3- boot computer from USB drive</p>
+
+<p>Try to turn on the computer with the bootable USB plugged in. If it does not boot from the device automatically, or doesn&rsquo;t give you the option, then you need to change the boot sequence/exclusions from the BIOS.</p>
+
+<blockquote>
+<p><strong>Changing the boot sequence in the BIOS</strong></p>
+</blockquote>
+
+<p><details>
+  <summary>
+<strong>BIOS edits</strong> (click here)
+  </summary></p>
+
+<p>The BIOS (Basic Input Output Subsystem) is a chip on your system that links your computer hardware to the software installed. The BIOS controls a lot of core settings of your system.
+When an OS is installed, it is usually on the hard disk. To boot from a USB, you need to access the system BIOS, by pressing F12 (can be F2, F8 or F10) when you turn on the computer and before the OS launches, if one is installed. From the &ldquo;boot sequence&rdquo; menu, you would need to make sure the USB port you are using is not excluded in the boot sequence and you need to give it higher priority than the hard disk. Once you do, you can restart the system. It is supposed to boot from the USB and the CentOS installer will be launched. Follow instructions to complete the installation.</p>
+
+<p><img src="https://raw.githubusercontent.com/rdali/Food4Thought/master/content/imgs/2020/motherboard_labelled.jpg" alt="BIOS chip" /></p>
+
+<p>We found this <a href="http://www.boot-disk.com/boot_priority.htm">link</a> to be useful.</p>
+
+<p>We finally set up the internet connection and <a href="https://phoenixnap.com/kb/how-to-enable-ssh-centos-7">configured ssh</a>.
+</details></p>
+
+<p><br/></p>
+
+<h3 id="the-actual-experience">The actual experience</h3>
+
+<p>Although it seems like a simple list of 3 steps, things are rarely as simple as they seem. Installations are often complicated as they depend largely on your system&rsquo;s environment, libraries, version and compatibilities. You are lucky if the default instructures worked for you off the bat. These 3 steps took roughly 3 days to complete, partly because we were working on it casually and partly because the system we built is very old and adjustments needed to be made. We had to update the Lenovo BIOS as our earlier attempts all failed.</p>
+
+<p>My advice, as with anything, is to work slowly, keep a log of what you tried, what worked and what didn&rsquo;t, and work in a stepwise fashion, testing after every step to avoid falling into a situation where you can&rsquo;t isolate the failed step.</p>
+
+<p>We now have a CentOS server that we are slowly configuring. We bashed the other 2 computers and played with their parts. In all, it was a fun thing to do together.</p>
+
+<blockquote>
+<p><strong>Updating the BIOS</strong></p>
+</blockquote>
+
+<p><details>
+  <summary>
+<strong>BIOS update</strong> (click here)
+  </summary></p>
+
+<p>Look for instructions on the website of the motherboard manufacturer before looking at other sites. We found useful <a href="https://download.lenovo.com/ibmdl/pub/pc/pccbbs/thinkcentre_bios/9hj954usa.txt">instructions</a> on the Lenovo site.</p>
+
+<p></details></p>
+
+<p><br/></p>
+
+<h3 id="what-s-next">What&rsquo;s next?</h3>
+
+<p>Now that the system is there, I will slowly explore it and mess with it. I will write a series of posts on various tasks. Eventually, I&rsquo;d like to get my Linux certification before the end of the year.</p>
+
+<p><br/>
+<br/></p>
+
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2020/covid19/index.html" data-toggle="tooltip" data-placement="top" title="COVID-19: sense in a time of non-sense">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            
+<div id="disqus-comment"></div>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "food4thought-3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                     
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                    </div>
+                </section>
+
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Food4Thought" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:roladali@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/rdali094">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/rdali">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/rola-dali-phd-63b7133a/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Food4Thought , 2020
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+       bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else{
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+
+
+
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-122338769-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
+</html>

@@ -12,7 +12,7 @@ tags:
     - C3G
     - GenPipes
     - Compute Canada
-categories: [ Genomic Analysis ]
+categories: [ Genomics ]
 image:      ""
 ---
 

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/Food4Thought/2020/server/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/2020/covid19/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
   </url>
@@ -29,6 +34,12 @@
   
   <url>
     <loc>/Food4Thought/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/centos-7/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -63,25 +74,19 @@
   </url>
   
   <url>
-    <loc>/Food4Thought/categories/epidemiology-analysis/</loc>
+    <loc>/Food4Thought/categories/epidemiology/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/Food4Thought/</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/Food4Thought/tags/genpipes/</loc>
-    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/Food4Thought/categories/genomic-analysis/</loc>
     <lastmod>2018-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -93,8 +98,26 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/categories/genomics/</loc>
+    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/home-server/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/linux/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/post/</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -112,6 +135,18 @@
   <url>
     <loc>/Food4Thought/tags/</loc>
     <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/categories/tech-linux/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/technology/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

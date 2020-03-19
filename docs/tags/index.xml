@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>CentOS 7</title>
+      <link>/Food4Thought/tags/centos-7/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/centos-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Compute Canada</title>
       <link>/Food4Thought/tags/compute-canada/</link>
       <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
@@ -75,11 +84,38 @@
     </item>
     
     <item>
+      <title>Home server</title>
+      <link>/Food4Thought/tags/home-server/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/home-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/Food4Thought/tags/linux/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>RNASeq</title>
       <link>/Food4Thought/tags/rnaseq/</link>
       <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/Food4Thought/tags/rnaseq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>/Food4Thought/tags/technology/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/technology/</guid>
       <description></description>
     </item>
     
