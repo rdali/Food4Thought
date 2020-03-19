@@ -13,7 +13,7 @@
     <meta name="keyword"  content="Rola Dali, Tutorials, genomics, computer Science, Data Science, Bioinformatics, R, python">
     <link rel="shortcut icon" href="/Food4Thought/img/favicon.ico">
 
-    <title>Setting Up a CentOS 7 home server-Rola Dali&#39;s Blog</title>
+    <title>Setting Up a CentOS7 home server-Rola Dali&#39;s Blog</title>
 
     <link rel="canonical" href="/2020/server/index.html">
 
@@ -154,7 +154,7 @@
                         </a>
                         
                     </div>
-                    <h1>Setting Up a CentOS 7 home server</h1>
+                    <h1>Setting Up a CentOS7 home server</h1>
                     <h2 class="subheading">... because it is fun...</h2>
                     <span  class="meta">Posted by Rola Dali on Tuesday, March 17, 2020
                         
@@ -190,6 +190,9 @@
 <li><a href="#software">Software</a></li>
 <li><a href="#installing-centos-7">Installing CentOS 7</a>
 <ul>
+<li><a href="#1-download-linux-iso-file">1- Download Linux iso file:</a></li>
+<li><a href="#2-create-a-bootable-usb-drive-with-the-iso-file">2- Create a bootable USB drive with the iso file</a></li>
+<li><a href="#3-boot-computer-from-usb-drive">3- boot computer from USB drive</a></li>
 <li><a href="#the-actual-experience">The actual experience</a></li>
 <li><a href="#what-s-next">What&rsquo;s next?</a></li>
 </ul></li>
@@ -207,9 +210,9 @@
 
 <h2 id="hardware">Hardware</h2>
 
-<p>I had purchased a <em>Lenovo</em> tower from a colleague of mine for about 35\$ last year in order to break it down into parts. It is an M81 ThinkCenter running Windows 7. It has an Intel Core i5 processor, 4 GB of RAM and a 500 GB drive. It was produced back in 2011 which makes it about 9 years old. We also had 2 other i3 towers that we got for free from a friend.</p>
+<p>I had purchased a <em>Lenovo</em> tower from a colleague of mine for about 35$ last year in order to break it down into parts. It is an M81 ThinkCenter running Windows 7. It has an Intel Core i5 processor, 4 GB of RAM and a 500 GB drive. It was produced back in 2011 which makes it about 9 years old. We also had 2 other i3 towers that we got for free from a friend.</p>
 
-<p>We opened up all 3 towers and pulled out the graphics cards, RAMs, hard drives and re-assembled the newer pieces into a single system on the lenovo board. The final product was a system with Intel Core i5, 14 GB of RAM, 1.5 TB drive and a primitive graphics card with an HDMI input which was absent in the lenovo system; not great specs by today&rsquo;s standards but good enough for 35\$ and for a system that is intended to be abused. The initial model did not have a Network card to hook up to the internet so we added a Wi-Fi usb adapter.</p>
+<p>We opened up all 3 towers and pulled out the graphics cards, RAMs, hard drives and re-assembled the newer pieces into a single system on the lenovo board. The final product was a system with Intel Core i5, 14 GB of RAM, 1.5 TB drive and a primitive graphics card with an HDMI input which was absent in the lenovo system; not great specs by today&rsquo;s standards but good enough for 35$ and for a system that is intended to be abused. The initial model did not have a Network card to connect to the internet so we added a Wi-Fi USB adapter.</p>
 
 <p><img src="https://raw.githubusercontent.com/rdali/Food4Thought/master/content/imgs/2020/computers_scavange.jpg" alt="Putting Frankenstein together" /></p>
 
@@ -223,19 +226,19 @@
 
 <p>There were several steps to installing a new OS which were summed up well on most references. I wanted a single boot system with CentOS 7 only. I had my mac on the side for help with references and downloads.</p>
 
-<p>###1- Download Linux iso file:</p>
+<h3 id="1-download-linux-iso-file">1- Download Linux iso file:</h3>
 
 <p>I downloaded the <a href="http://centos.mirror.iweb.ca/7.7.1908/isos/x86_64/CentOS-7-x86_64-Minimal-1908.iso">CentOS 7 Minimal iso file</a> from the CentOS <a href="http://centos.mirror.iweb.ca/7.7.1908/isos/x86_64/">website</a>. I wanted the Minimal version, which comes with less tools, in order to customize the system and learn how to do things from scratch.</p>
 
 <p><strong>Note</strong>: It is always a good idea to validate the checksum of the downloaded file to avoid failures due to incomplete or corrupt downloads.</p>
 
-<p>###2- Create a bootable USB drive with the iso file</p>
+<h3 id="2-create-a-bootable-usb-drive-with-the-iso-file">2- Create a bootable USB drive with the iso file</h3>
 
-<p>Plug in the USB and check the name of the USB drive by typing in the terminal:</p>
+<p>On my Mac, I plugged in the USB to check the name of the USB drive by typing in the terminal:</p>
 
 <p><code>df -h</code></p>
 
-<p>The USB port I use on my mac is: disk2</p>
+<p>The USB port I use on my mac is named disk2</p>
 
 <p>Create bootable USB drive:</p>
 
@@ -245,9 +248,9 @@
 
 <p><code>sudo dd if=~/Downloads/CentOS-7-x86_64-Minimal-1908.iso of=/dev/rdisk2 bs=1m</code></p>
 
-<p>###3- boot computer from USB drive</p>
+<h3 id="3-boot-computer-from-usb-drive">3- boot computer from USB drive</h3>
 
-<p>Try to turn on the computer with the bootable USB plugged in. If it does not boot from the device automatically, or doesn&rsquo;t give you the option, then you need to change the boot sequence/exclusions from the BIOS.</p>
+<p>Try to turn on the server to be with the bootable USB plugged in. If it does not boot from the device automatically, or doesn&rsquo;t give you the option, then you need to change the boot sequence/exclusions from the BIOS.</p>
 
 <blockquote>
 <p><strong>Changing the boot sequence in the BIOS</strong></p>
@@ -259,7 +262,7 @@
   </summary></p>
 
 <p>The BIOS (Basic Input Output Subsystem) is a chip on your system that links your computer hardware to the software installed. The BIOS controls a lot of core settings of your system.
-When an OS is installed, it is usually on the hard disk. To boot from a USB, you need to access the system BIOS, by pressing F12 (can be F2, F8 or F10) when you turn on the computer and before the OS launches, if one is installed. From the &ldquo;boot sequence&rdquo; menu, you would need to make sure the USB port you are using is not excluded in the boot sequence and you need to give it higher priority than the hard disk. Once you do, you can restart the system. It is supposed to boot from the USB and the CentOS installer will be launched. Follow instructions to complete the installation.</p>
+When an OS is installed, it is usually on the hard disk. To boot from a USB, you need to access the system BIOS, by pressing F12 (can be F2, F8 or F10) when you turn on the computer and before the OS launches, if one is installed. From the &ldquo;Startup&rdquo; menu, you would need to examine the &ldquo;Boot Sequence&rdquo; and make sure the USB port you are using is not excluded in the boot order and you need to give it higher priority than the hard disk. Once you do, you can restart the system. It is supposed to boot from the USB and the CentOS installer will be launched. Follow instructions to complete the installation.</p>
 
 <p><img src="https://raw.githubusercontent.com/rdali/Food4Thought/master/content/imgs/2020/motherboard_labelled.jpg" alt="BIOS chip" /></p>
 
@@ -272,11 +275,11 @@ When an OS is installed, it is usually on the hard disk. To boot from a USB, you
 
 <h3 id="the-actual-experience">The actual experience</h3>
 
-<p>Although it seems like a simple list of 3 steps, things are rarely as simple as they seem. Installations are often complicated as they depend largely on your system&rsquo;s environment, libraries, version and compatibilities. You are lucky if the default instructures worked for you off the bat. These 3 steps took roughly 3 days to complete, partly because we were working on it casually and partly because the system we built is very old and adjustments needed to be made. We had to update the Lenovo BIOS as our earlier attempts all failed.</p>
+<p>Although it seems like a simple list of 3 steps, things are rarely as simple as they seem. Installations are often complicated as they depend largely on your system&rsquo;s environment, libraries, versions and compatibilities. You are lucky if the default instructions work for you off the bat. These 3 steps took roughly 3 days to complete, partly because we were working on it casually and partly because the system we built is very old and adjustments needed to be made. We had to update the Lenovo BIOS as our earlier attempts all failed.</p>
 
-<p>My advice, as with anything, is to work slowly, keep a log of what you tried, what worked and what didn&rsquo;t, and work in a stepwise fashion, testing after every step to avoid falling into a situation where you can&rsquo;t isolate the failed step.</p>
+<p>Since these things are very different depending on hardware and software, you will need to go through forums to fix issues as they come up. My advice, as with anything, is to work slowly, keep a log of what you tried, what worked and what didn&rsquo;t, and work in a stepwise fashion, testing after every step to avoid falling into a situation where you can&rsquo;t isolate the failed step.</p>
 
-<p>We now have a CentOS server that we are slowly configuring. We bashed the other 2 computers and played with their parts. In all, it was a fun thing to do together.</p>
+<p><strong>Process Complete!</strong> We now have a CentOS server that we are slowly configuring. We bashed the other 2 computers and played with their parts. In all, it was a fun project to do together.</p>
 
 <blockquote>
 <p><strong>Updating the BIOS</strong></p>
