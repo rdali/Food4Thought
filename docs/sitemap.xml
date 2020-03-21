@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/Food4Thought/2020/phd_tips/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/2020/server/</loc>
     <lastmod>2020-03-17T00:00:00+00:00</lastmod>
   </url>
@@ -24,6 +29,12 @@
   
   <url>
     <loc>/Food4Thought/search/placeholder/</loc>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/academia/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -50,7 +61,7 @@
   </url>
   
   <url>
-    <loc>/Food4Thought/tags/corona/</loc>
+    <loc>/Food4Thought/tags/coronavirus/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -68,6 +79,18 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/data-analysis/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/categories/data-analysis/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/tags/epidemiology/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -81,7 +104,7 @@
   
   <url>
     <loc>/Food4Thought/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -122,8 +145,14 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/phd-life/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/post/</loc>
-    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -134,13 +163,19 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/scientific-research/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/search/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/Food4Thought/tags/</loc>
-    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

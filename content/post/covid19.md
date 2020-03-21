@@ -8,7 +8,7 @@ author:     "Rola Dali"
 URL: "/2020/covid19/index.html"
 tags:
     - covid19
-    - corona
+    - coronavirus
     - epidemiology
     
 categories: [ Epidemiology, Current Issues ]

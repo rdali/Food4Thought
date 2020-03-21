@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Food4Thought</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Food4Thought/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Academia</title>
+      <link>/Food4Thought/tags/academia/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/academia/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>C3G</title>
@@ -39,11 +48,11 @@
     </item>
     
     <item>
-      <title>Corona</title>
-      <link>/Food4Thought/tags/corona/</link>
+      <title>Coronavirus</title>
+      <link>/Food4Thought/tags/coronavirus/</link>
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/Food4Thought/tags/corona/</guid>
+      <guid>/Food4Thought/tags/coronavirus/</guid>
       <description></description>
     </item>
     
@@ -53,6 +62,15 @@
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/Food4Thought/tags/covid19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Analysis</title>
+      <link>/Food4Thought/tags/data-analysis/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/data-analysis/</guid>
       <description></description>
     </item>
     
@@ -102,11 +120,29 @@
     </item>
     
     <item>
+      <title>PhD Life</title>
+      <link>/Food4Thought/tags/phd-life/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/phd-life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>RNASeq</title>
       <link>/Food4Thought/tags/rnaseq/</link>
       <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/Food4Thought/tags/rnaseq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scientific Research</title>
+      <link>/Food4Thought/tags/scientific-research/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/scientific-research/</guid>
       <description></description>
     </item>
     

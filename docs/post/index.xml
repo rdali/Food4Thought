@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Food4Thought</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Food4Thought/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Self Notes from my PhD</title>
+      <link>/Food4Thought/2020/phd_tips/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2020/phd_tips/</guid>
+      <description>Self Notes from my PhD I have been in academic research for over 10 years. I started as a lab intern in the summer of 2007 on an NSERC USRA scholarhsip and have been in research ever since. I have worked in various fields including bactrial and fungal evolution, heart development, mouse work, plant and fungal symbiosis, brain development, cancer, stem cells and chromatin architecture, to name a few.</description>
+    </item>
     
     <item>
       <title>Setting Up a CentOS7 home server</title>
