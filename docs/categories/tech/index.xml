@@ -6,10 +6,30 @@
     <description>Recent content in Tech on Food4Thought</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Food4Thought/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Customizing Server Welcome Message</title>
+      <link>/Food4Thought/2020/linux_motd/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2020/linux_motd/</guid>
+      <description>Customizing Server Welcome Message I recently set up a home server as a small project to keep me sane during the COVID-19 social distancing period. I have been slowly customizing it to my liking to have a fully functional server that I can host files on and to learn a thing or two about Linux Sys Admin tasks.
+I wanted to customize the text that gets printed out when you first log into a server.</description>
+    </item>
+    
+    <item>
+      <title>Customizing your Prompt</title>
+      <link>/Food4Thought/2020/linux_prompt/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2020/linux_prompt/</guid>
+      <description>Customizing Your Prompt I recently set up a home server as a small project to keep me sane during the COVID-19 social distancing period. I have been slowly customizing it to my liking to have a fully functional server that I can host files on and to learn a thing or two about Linux Sys Admin tasks.
+One of the first things I do on any new server is to customize my prompt.</description>
+    </item>
     
     <item>
       <title>Setting Up a CentOS7 home server</title>

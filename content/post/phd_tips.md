@@ -18,7 +18,7 @@ image:      ""
 
 # Self Notes from my PhD
 
-I have been in academic research for over 10 years. I started as a lab intern in the summer of 2007 on an NSERC USRA scholarhsip and have been in research ever since. I have worked in various fields including bactrial and fungal evolution, heart development, mouse work, plant and fungal symbiosis, brain development, cancer, stem cells and chromatin architecture, to name a few. 
+I have been in academic research for over 10 years. I started as a lab intern in the summer of 2007 on an NSERC USRA scholarhsip and have been in research ever since. I have worked in various fields including bacterial and fungal evolution, heart development, mouse work, plant and fungal symbiosis, brain development, cancer, stem cells and chromatin architecture, to name a few. 
 
 The process is usually quite similar: 
 
@@ -38,7 +38,7 @@ Data analysis is quite exciting but can have a few pitfalls to be careful of. La
 
 3- Take your time, read a lot and have a clear idea of what and why you are doing things. Working without a long term plan is like driving somewhere new without a GPS, inefficient and redundant. It also sucks to work hard for years only to know that the question was answered before you started.
 
-4- Work in a modular fashion. Working step by step will help make sure what works and what doesn't.
+4- Work in a modular fashion. Working step by step will help make sure what works and what doesn't. Unit test as much as possible!
 
 5- A lot of data is not always a good thing. It can easily clutter your thinking and drown you. Be systematic…
 

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><head>
+    <meta name="google-site-verification" content="9vIieCe-Qpd78QOmBl63rGtIVbhY6sYyuxX3j8XWBA4" />
+    <meta name="baidu-site-verification" content="LRrmH41lz7" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Journals of a meandering mind: topics/tutorials in Computer Science, Data Science, Bioinformatics, The Sciences, and Society...">
+    
+    <meta name="keyword"  content="Rola Dali, Tutorials, genomics, computer Science, Data Science, Bioinformatics, R, python">
+    <link rel="shortcut icon" href="/Food4Thought/img/favicon.ico">
+
+    <title>Customizing your Prompt-Rola Dali&#39;s Blog</title>
+
+    <link rel="canonical" href="/2020/linux_prompt/index.html">
+
+    <link rel="stylesheet" href="/Food4Thought/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/Food4Thought/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/Food4Thought/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/Food4Thought/css/syntax.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/Food4Thought/js/jquery.min.js"></script>
+    
+    
+    <script src="/Food4Thought/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/Food4Thought/js/hux-blog.min.js"></script>
+</head>
+</head>
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/Food4Thought//">Food4Thought</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/Food4Thought//">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/current-issues">Current Issues</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/data-analysis">Data Analysis</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/epidemiology">Epidemiology</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/genomics">Genomics</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/linux">Linux</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/Food4Thought/categories/tech">Tech</a>
+                    </li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/Food4Thought/img/Food4Thought_home.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                       
+                       <a class="tag" href="/Food4Thought/tags/linux" title="Linux">
+                           Linux
+                        </a>
+                        
+                       <a class="tag" href="/Food4Thought/tags/bash" title="Bash">
+                           Bash
+                        </a>
+                        
+                       <a class="tag" href="/Food4Thought/tags/prompt" title="prompt">
+                           prompt
+                        </a>
+                        
+                       <a class="tag" href="/Food4Thought/tags/home-server" title="Home Server">
+                           Home Server
+                        </a>
+                        
+                    </div>
+                    <h1>Customizing your Prompt</h1>
+                    <h2 class="subheading">... because little things matter...</h2>
+                    <span  class="meta">Posted by Rola Dali on Friday, March 20, 2020
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+		
+                <header>
+                <h2>Overview</h2>
+                </header>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#customizing-your-prompt">Customizing Your Prompt</a></li>
+</ul>
+</nav>
+		
+		
+
+<h1 id="customizing-your-prompt">Customizing Your Prompt</h1>
+
+<p>I recently set up a home server as a small project to keep me sane during the COVID-19 social distancing period. I have been slowly customizing it to my liking to have a fully functional server that I can host files on and to learn a thing or two about Linux Sys Admin tasks.</p>
+
+<p>One of the first things I do on any new server is to customize my prompt. Having a familiar prompt with the colors I like usually puts me in a good mood and makes things feel familiar across all the servers I use. It gives a new server a more &ldquo;homey&rdquo; feel.</p>
+
+<p>The prompt format is controlled by a variable PS1. By changing the value of PS1 (for &ldquo;Prompt String 1&rdquo;), you can change your prompt format and color. Here are some values that might be helpful:</p>
+
+<p>Selected values used in Shell prompt:</p>
+
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>\d</td>
+<td>Current Date</td>
+</tr>
+
+<tr>
+<td>\t</td>
+<td>Current Time</td>
+</tr>
+
+<tr>
+<td>\h</td>
+<td>Host Name</td>
+</tr>
+
+<tr>
+<td>\u</td>
+<td>User</td>
+</tr>
+
+<tr>
+<td>\W</td>
+<td>Working Directory</td>
+</tr>
+
+<tr>
+<td>\[</td>
+<td>Start of non-printed characters, like colors</td>
+</tr>
+
+<tr>
+<td>\]</td>
+<td>End of non-printed characters</td>
+</tr>
+</tbody>
+</table>
+
+<p>Selected colors used in Shell prompt:</p>
+
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Color</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>\033[0;30m</td>
+<td>Black</td>
+</tr>
+
+<tr>
+<td>\033[0;31m</td>
+<td>Red</td>
+</tr>
+
+<tr>
+<td>\033[0;32m</td>
+<td>Green</td>
+</tr>
+
+<tr>
+<td>\033[0;33m</td>
+<td>Brown</td>
+</tr>
+
+<tr>
+<td>\033[0;34m</td>
+<td>Blue</td>
+</tr>
+
+<tr>
+<td>\033[0;35m</td>
+<td>Purple</td>
+</tr>
+
+<tr>
+<td>\033[0;36m</td>
+<td>Cyan</td>
+</tr>
+
+<tr>
+<td>\033[0;37m</td>
+<td>Light Gray</td>
+</tr>
+
+<tr>
+<td>\033[1;30m</td>
+<td>Dark Gray</td>
+</tr>
+
+<tr>
+<td>\033[1;31m</td>
+<td>Light Red</td>
+</tr>
+
+<tr>
+<td>\033[1;32m</td>
+<td>Light Green</td>
+</tr>
+
+<tr>
+<td>\033[1;33m</td>
+<td>Yellow</td>
+</tr>
+
+<tr>
+<td>\033[1;34m</td>
+<td>Light Blue</td>
+</tr>
+
+<tr>
+<td>\033[1;35m</td>
+<td>Light Purple</td>
+</tr>
+
+<tr>
+<td>\033[1;36m</td>
+<td>Light Cyan</td>
+</tr>
+
+<tr>
+<td>\033[1;37m</td>
+<td>White</td>
+</tr>
+</tbody>
+</table>
+
+<p>I usually like to know the user I am under (\u), the server I am using (\h) and the folder I am in (\W). So my $PS1 looks like:</p>
+
+<p><code>export PS1=\[\033[0;36m\]\u\[\033[1;37m\]@\[\033[0;32m\]\h:\[\033[1;33m\]\W\[\033[1;37m\]$</code></p>
+
+<p>Here is the breakdown:</p>
+
+<p><img src="https://raw.githubusercontent.com/rdali/Food4Thought/master/content/imgs/2020/prompt_details.png" alt="PS1" /></p>
+
+<p>To edit yours, you can customize your PS1 string and then save your edited PS1 command in your .bashrc file. As an example:</p>
+
+<pre><code>nano ~/.bashrc
+
+## paste your PS1
+export PS1=\[\033[0;36m\]\u\[\033[1;37m\]@\[\033[0;32m\]\h:\[\033[1;33m\]\W\[\033[1;37m\]$
+
+## Save and exit. You will need to source bashrc or open a new terminal to see the changes.
+</code></pre>
+
+<p>Here is what mine looks like:</p>
+
+<p><img src="https://raw.githubusercontent.com/rdali/Food4Thought/master/content/imgs/2020/prompt.png" alt="PS1" /></p>
+
+<p><br/></p>
+
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2020/linux_motd/index.html" data-toggle="tooltip" data-placement="top" title="Customizing Server Welcome Message">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2020/phd_tips/index.html" data-toggle="tooltip" data-placement="top" title="Self Notes from my PhD">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            
+<div id="disqus-comment"></div>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "food4thought-3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                     
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <a href="/Food4Thought/tags/linux" title="Linux">
+                                Linux
+                            </a>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                    </div>
+                </section>
+
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href="" rel="alternate" type="application/rss+xml" title="Food4Thought" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:roladali@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    <li>
+                        <a href="https://twitter.com/rdali094">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/rdali">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/rola-dali-phd-63b7133a/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Food4Thought , 2020
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+       bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else{
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+
+
+
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-122338769-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
+</html>
