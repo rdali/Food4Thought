@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Food4Thought</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Food4Thought/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Academia</title>
       <link>/Food4Thought/tags/academia/</link>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/Food4Thought/tags/academia/</guid>
       <description></description>
@@ -161,6 +161,15 @@
       <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/Food4Thought/tags/rnaseq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research Scientist</title>
+      <link>/Food4Thought/tags/research-scientist/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/tags/research-scientist/</guid>
       <description></description>
     </item>
     

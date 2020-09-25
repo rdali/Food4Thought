@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/Food4Thought/2020/researcher/</loc>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/2020/linux_motd/</loc>
     <lastmod>2020-03-21T00:00:00+00:00</lastmod>
   </url>
@@ -43,7 +48,7 @@
   
   <url>
     <loc>/Food4Thought/tags/academia/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -120,7 +125,7 @@
   
   <url>
     <loc>/Food4Thought/</loc>
-    <lastmod>2020-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -167,6 +172,12 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/categories/opinion/</loc>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/tags/phd-life/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -174,7 +185,7 @@
   
   <url>
     <loc>/Food4Thought/post/</loc>
-    <lastmod>2020-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -191,6 +202,12 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/research-scientist/</loc>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/tags/scientific-research/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -203,7 +220,7 @@
   
   <url>
     <loc>/Food4Thought/tags/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
