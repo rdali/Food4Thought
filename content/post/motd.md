@@ -1,7 +1,7 @@
 ---
 layout:     post 
 title:      "Customizing Server Welcome Message"
-subtitle:   ""
+subtitle:   "... bcz the little details matter ..."
 description: ""
 date:       2020-03-21
 author:     "Rola Dali"

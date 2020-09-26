@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/Food4Thought/2020/dlrl/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/2020/dividinglines/</loc>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/2020/hic/</loc>
+    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/2020/researcher/</loc>
     <lastmod>2020-04-15T00:00:00+00:00</lastmod>
   </url>
@@ -76,6 +91,12 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/chromatin-architecture/</loc>
+    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/tags/compute-canada/</loc>
     <lastmod>2018-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -101,7 +122,7 @@
   
   <url>
     <loc>/Food4Thought/tags/data-analysis/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -125,7 +146,7 @@
   
   <url>
     <loc>/Food4Thought/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -137,13 +158,13 @@
   
   <url>
     <loc>/Food4Thought/tags/genomics/</loc>
-    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/Food4Thought/categories/genomics/</loc>
-    <lastmod>2018-08-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -172,8 +193,14 @@
   </url>
   
   <url>
+    <loc>/Food4Thought/tags/ml/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/Food4Thought/categories/opinion/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -185,7 +212,13 @@
   
   <url>
     <loc>/Food4Thought/post/</loc>
-    <lastmod>2020-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/categories/programming/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -215,6 +248,12 @@
   
   <url>
     <loc>/Food4Thought/search/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/Food4Thought/tags/statistics/</loc>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,7 +1,7 @@
 ---
 layout:     post 
 title:      "Setting Up a CentOS7 home server"
-subtitle:   "... because it is fun..."
+subtitle:   "... because it is fun ..."
 description: "I recently set up a CentOS 7 home server from 3 very old computers. This post describes that process."
 date:       2020-03-17
 author:     "Rola Dali"

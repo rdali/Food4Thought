@@ -40,7 +40,7 @@
     <item>
       <title>Genomics</title>
       <link>/Food4Thought/categories/genomics/</link>
-      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/Food4Thought/categories/genomics/</guid>
       <description></description>
@@ -58,9 +58,18 @@
     <item>
       <title>Opinion</title>
       <link>/Food4Thought/categories/opinion/</link>
-      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/Food4Thought/categories/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>/Food4Thought/categories/programming/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/categories/programming/</guid>
       <description></description>
     </item>
     

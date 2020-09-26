@@ -1,7 +1,7 @@
 ---
 layout:     post 
 title:      "Customizing your Prompt"
-subtitle:   "... because little things matter..."
+subtitle:   "... because little things matter ..."
 description: ""
 date:       2020-03-20
 author:     "Rola Dali"

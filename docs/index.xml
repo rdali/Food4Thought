@@ -6,10 +6,39 @@
     <description>Recent content on Food4Thought</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Food4Thought/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep Learning and Reinforcement Learning (DLRL) Summer School 2020</title>
+      <link>/Food4Thought/2020/dlrl/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2020/dlrl/</guid>
+      <description>Deep Learning and Reinforcement Learning (DLRL) Summer School 2020 This year, I was 1 of the 300 participants selected from around the globe for the DLRL 2020.
+This is a prestigious annual event organized by the 3 major machine learning reaseach institutes in Canada: MILA (Montreal), Vector (Toronto) and Amii (Alberta), all brought together through CIFAR.
+Overall impression I was impressed by the number of women on the lecture panel and the number of women attending the event.</description>
+    </item>
+    
+    <item>
+      <title>Dividing lines: discritizing contineous scales for our ease</title>
+      <link>/Food4Thought/2020/dividinglines/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2020/dividinglines/</guid>
+      <description>Dividing lines: discretizing contineous scales for our ease Dividing lines in University: Throughout my education, I tried to have a large scope of anything I do. The &amp;ldquo;Big Picture&amp;rdquo; matters to me and I usually define broad lines; the What?, the Why?, and the How? are always scrutinized ahead of every task. I have also always believed in grey zones and multidisciplinarity. My undergraduate degree was in Biochemitrsy, a field that is at the borderline between Biology and Chemistry.</description>
+    </item>
+    
+    <item>
+      <title>My Field of Study: Chromatin Architecture</title>
+      <link>/Food4Thought/2020/hic/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2020/hic/</guid>
+      <description>My Field of Study: Chromatin Architecture My research career has involved multiple different fields and countless questions. My area of expertise though is that which I worked on for the larger part of my PhD: Genomics. Specifically, my PhD thesis examined genetic aspects of the development of an aggressive brain cancer, Glioblastoma. Much of my PhD work remains to be published. It involves looking at DNA folding or chromatin architecture.</description>
+    </item>
     
     <item>
       <title>Research Science, Med. School &amp; Engineering</title>

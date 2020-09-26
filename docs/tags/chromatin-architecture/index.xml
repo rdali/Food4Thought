@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chromatin Architecture on Food4Thought</title>
+    <link>/Food4Thought/tags/chromatin-architecture/</link>
+    <description>Recent content in Chromatin Architecture on Food4Thought</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/Food4Thought/tags/chromatin-architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Field of Study: Chromatin Architecture</title>
+      <link>/Food4Thought/2020/hic/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/Food4Thought/2020/hic/</guid>
+      <description>My Field of Study: Chromatin Architecture My research career has involved multiple different fields and countless questions. My area of expertise though is that which I worked on for the larger part of my PhD: Genomics. Specifically, my PhD thesis examined genetic aspects of the development of an aggressive brain cancer, Glioblastoma. Much of my PhD work remains to be published. It involves looking at DNA folding or chromatin architecture.</description>
+    </item>
+    
+  </channel>
+</rss>
