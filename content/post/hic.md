@@ -20,7 +20,7 @@ My research career has involved multiple different fields and countless question
 
 ### What is chromatin?
 
-Chromatin is the scientific terms used for the ensembl of DNA and its associated proteins. 
+Chromatin is the scientific term used for the ensembl of DNA and its associated proteins. 
 
 ### What is chromatin architecture?
 

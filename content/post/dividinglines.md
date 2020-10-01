@@ -18,12 +18,12 @@ image:      "https://raw.githubusercontent.com/rdali/Food4Thought/master/content
 
 #### Dividing lines in University:
 
-Throughout my education, I tried to have a large scope of anything I do. The "Big Picture" matters to me and I usually define broad lines; the ***What?***, the ***Why?***, and the ***How?*** are always scrutinized ahead of every task. I have also always believed in grey zones and multidisciplinarity. My undergraduate degree was in *Biochemitrsy*, a field that is at the borderline between Biology and Chemistry. I read a lot about different fields and moved from discipline to discipline.  
-To more traditional mentors, this was viewed as a *lack of focus* as one mentor once told me. To me, it was an embrace to what I understood early on: As life becomes more complex, ***multidisciplinarity is the new must***.  
+Throughout my education, I tried to have a large scope of anything I do. The "Big Picture" matters to me and I usually define broad lines; the ***What?***, the ***Why?***, and the ***How?*** are always scrutinized ahead of every task. I have also always believed in grey zones and multi-disciplinarity. My undergraduate degree was in *Biochemitrsy*, a field that is at the borderline between Biology and Chemistry. I read a lot about different fields and moved from discipline to discipline.  
+To more traditional mentors, this was viewed as a *lack of focus* as one mentor once told me. To me, it was an embrace to what I understood early on: As life becomes more complex, ***multi-disciplinarity is the new must***.  
 
 In my view, life knows no real bounds. We draw imaginary lines everywhere in an attempt to better organize our institutions and society. Life does not know of the lines we drew between Biology, Chemistry, Biochemistry and Physics. To understand any phenomenon in real depth, it should be viewed from the lense of all these fields and more. Discretizing disciplines only serves our need to define smaller, manageable entities.
 
-***Multidisciplinarity is the new must.*** My PhD was in Neuroscience **&** bioinformatics. My field, [chromatin architecture](https://rdali.github.io/Food4Thought/2020/hic/) looks at DNA folding from the lense of genomics, biochemistry, physics, biology... My team at C3G has so many different backgrounds/expertise (biologists, bioinfortmaticians, geneticists, astro-physicist, software developers...) all trying to tackle understanding health and disease.
+***Multi-disciplinarity is the new must.*** My PhD was in Neuroscience **&** bioinformatics. My field, [chromatin architecture](https://rdali.github.io/Food4Thought/2020/hic/) looks at DNA folding from the lense of genomics, biochemistry, physics, biology... My team at C3G has so many different backgrounds/expertise (biologists, bioinformaticians, geneticists, astro-physicist, software developers...) all trying to tackle and understand health and disease.
 
 
 #### Dividing lines in data analysis:

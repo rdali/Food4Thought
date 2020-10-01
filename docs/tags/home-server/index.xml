@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home Server on Food4Thought</title>
+    <title>Home server on Food4Thought</title>
     <link>/Food4Thought/tags/home-server/</link>
-    <description>Recent content in Home Server on Food4Thought</description>
+    <description>Recent content in Home server on Food4Thought</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Food4Thought/tags/home-server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Customizing Server Welcome Message</title>
-      <link>/Food4Thought/2020/linux_motd/</link>
-      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      <title>Setting Up a CentOS7 home server</title>
+      <link>/Food4Thought/2020/server/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/Food4Thought/2020/linux_motd/</guid>
-      <description>Customizing Server Welcome Message I recently set up a home server as a small project to keep me sane during the COVID-19 social distancing period. I have been slowly customizing it to my liking to have a fully functional server that I can host files on and to learn a thing or two about Linux Sys Admin tasks.
-I wanted to customize the text that gets printed out when you first log into a server.</description>
-    </item>
-    
-    <item>
-      <title>Customizing your Prompt</title>
-      <link>/Food4Thought/2020/linux_prompt/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/Food4Thought/2020/linux_prompt/</guid>
-      <description>Customizing Your Prompt I recently set up a home server as a small project to keep me sane during the COVID-19 social distancing period. I have been slowly customizing it to my liking to have a fully functional server that I can host files on and to learn a thing or two about Linux Sys Admin tasks.
-One of the first things I do on any new server is to customize my prompt.</description>
+      <guid>/Food4Thought/2020/server/</guid>
+      <description>Setting Up a CentOS 7 home server 
+I have been planning to set up a home server for a year now but have been putting it off. This week, with the COVID-19 lockdown, my husband and I pulled out the 3 ancient computers sitting in our garage to set up one decent home server. The purpose was mainly curiosity; to play with pieces of hardware and software to learn a few things and to have our own little server to test various pipelines.</description>
     </item>
     
   </channel>
